@@ -13,7 +13,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/hello/:username", handler.MainPage())
-	e.GET("/json", handler.JsonPage())
+	e.GET("/json/", handler.JsonPage())
 
 	e.Start(":8080")
 }
